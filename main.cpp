@@ -6,6 +6,11 @@ using namespace std;
 //-PROTOTYPES----------------
 // (1) add the function prototypes here to match their definitions (below)
 
+string getUserPassword();
+bool acceptedLength(string password);
+bool acceptedPhrase(string password);
+void displayPassword(string password);
+
 //---------------------------
 
 //-MAIN PROGRAM--------------
@@ -18,18 +23,20 @@ int main()
     do
     {
         // (2) call the getUserPassword function and store its return in entry
-        
+    entry = getUserPassword();    
         // (3) call the acceptedLength function w/ the entry argument
+     isGoodLength = acceptedLength(entry);    
         //     and store its return in isGoodLength
         
         // (4) call the acceptedPhrase function w/ the entry argument
+      isGoodWord = acceptedPhrase(entry); 
         //     and store its return in isGoodWord
         
     }while( !isGoodLength || !isGoodWord );
 
     cout<<"Password ";
     // (5) call the displayPassword function w/ the entry argument
-    
+    displayPassword(entry);
     cout<<" has been set\n";
 
     return 0;
