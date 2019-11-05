@@ -27,22 +27,22 @@ int main()
                 isGoodLength = acceptedLength(entry);
                 isGoodWord = acceptedPhrase(entry);
                 digits = numberOfDigits(entry);
-        }while (!isGoodLength || !isGoodWord || digits < 2 );
+        }while (!isGoodLength || !isGoodWord ||  digits > 2 );
 
-        /* do
+  /*      do
            {
-        // (2) call the getUserPassword function and store its return in entry
+                    // (2) call the getUserPassword function and store its return in entry
         entry = getUserPassword();    
-        // (3) call the acceptedLength function w/ the entry argument
+                    // (3) call the acceptedLength function w/ the entry argument
         isGoodLength = acceptedLength(entry);    
-        //     and store its return in isGoodLength
+                    //     and store its return in isGoodLength
 
-        // (4) call the acceptedPhrase function w/ the entry argument
+                    // (4) call the acceptedPhrase function w/ the entry argument
         isGoodWord = acceptedPhrase(entry); 
-        //     and store its return in isGoodWord
+                    //     and store its return in isGoodWord
 
         }while( !isGoodLength || !isGoodWord );
-        */
+    */    
         cout<<"Password ";
         // (5) call the displayPassword function w/ the entry argument
         displayPassword(entry);
