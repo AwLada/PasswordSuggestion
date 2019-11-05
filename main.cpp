@@ -27,7 +27,7 @@ int main()
                 isGoodLength = acceptedLength(entry);
                 isGoodWord = acceptedPhrase(entry);
                 digits = numberOfDigits(entry);
-        }while (!isGoodLength || !isGoodWord ||  digits > 2 );
+        }while (!isGoodLength || !isGoodWord ||  digits > 5 );
 
   /*      do
            {
